@@ -8,18 +8,42 @@ body {
 
 .calculator {
   background-color: white;
-  display: flex;
   width: 21.6rem;
   height: 40.5rem;
   border-radius: 37px;
   filter: drop-shadow(0 4px 29px rgba(0, 0, 0, 0.19));
-  align-items: flex-end;
-  justify-content: center;
+  border: solid 2px #c8c8c8;
+  font-family: "Inter", sans-serif;
+}
+
+.answer {
+  display: grid;
+  align-items: end;
+  height: 13.9rem;
+}
+
+.answer-align {
+  display: grid;
+  justify-content: space-between;
+  direction: rtl;
+  padding-right: 30px;
+  padding-bottom: 25px;
+}
+
+.current-answer {
+  font-size: 65px;
+}
+
+.previous-answer {
+  font-size: 65px;
 }
 
 .buttons {
   display: grid;
-  gap: 2px;
+  gap: 1px;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: 4.55rem 4.55rem 4.55rem 4.55rem;
   background-color: #f4f4f4;
   width: 21.6rem;
   height: 26.6rem;
@@ -46,6 +70,8 @@ body {
   width: 4.225rem;
   height: 4.225rem;
   filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.24));
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
 }
 
 .purple-button {
@@ -57,6 +83,8 @@ body {
   width: 4.225rem;
   height: 4.225rem;
   filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.24));
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 
 .two-span {
@@ -68,6 +96,8 @@ body {
   width: 8.8rem;
   height: 4.225rem;
   filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.24));
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 
 .equal-button {
@@ -79,4 +109,6 @@ body {
   width: 4.225rem;
   height: 4.225rem;
   filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.24));
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
