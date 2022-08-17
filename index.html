@@ -11,47 +11,48 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="app2.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <div class="calculator">
       <div class="answer">
         <div class="answer-align">
-          <div clas="previous-answer">111</div>
-          <div class="current-answer">544</div>
+          <div id="bobo" clas="previous-answer"></div>
+          <div id="booo" class="current-answer"></div>
         </div>
       </div>
 
       <div style="display: block">
         <div class="buttons">
           <div class="columns">
-            <button class="blue-botton">AC</button>
-            <button class="blue-botton">+/-</button>
-            <button class="blue-botton">%</button>
-            <button class="blue-botton">÷</button>
+            <button data-all-clear class="blue-button">AC</button>
+            <button data-reverse class="blue-button">+/-</button>
+            <button id="precent" class="blue-button">%</button>
+            <button id="division" class="blue-button">÷</button>
           </div>
           <div class="columns">
-            <button class="purple-button">7</button>
-            <button class="purple-button">8</button>
-            <button class="purple-button">9</button>
-            <button class="blue-botton">×</button>
+            <button data-number class="purple-button">7</button>
+            <button data-number class="purple-button">8</button>
+            <button data-number class="purple-button">9</button>
+            <button id="multiplication" class="blue-button">×</button>
           </div>
           <div class="columns">
-            <button class="purple-button">4</button>
-            <button class="purple-button">5</button>
-            <button class="purple-button">6</button>
-            <button class="blue-botton">-</button>
+            <button data-number class="purple-button">4</button>
+            <button data-number class="purple-button">5</button>
+            <button data-number class="purple-button">6</button>
+            <button id="minus" class="blue-button">-</button>
           </div>
           <div class="columns">
-            <button class="purple-button">1</button>
-            <button class="purple-button">2</button>
-            <button class="purple-button">3</button>
-            <button class="blue-botton">+</button>
+            <button data-number class="purple-button">1</button>
+            <button data-number class="purple-button">2</button>
+            <button data-number class="purple-button">3</button>
+            <button id="total" class="blue-button">+</button>
           </div>
           <div class="columns2">
-            <button class="two-span">0</button>
-            <button class="blue-botton">.</button>
-            <button class="equal-button">=</button>
+            <button data-number class="two-span">0</button>
+            <button data-point class="blue-button">.</button>
+            <button data-equals class="equal-button">=</button>
           </div>
         </div>
       </div>

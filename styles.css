@@ -24,8 +24,8 @@ body {
 
 .answer-align {
   display: grid;
-  justify-content: space-between;
-  direction: rtl;
+  justify-content: end;
+
   padding-right: 30px;
   padding-bottom: 25px;
 }
@@ -61,7 +61,7 @@ body {
   grid-template-columns: 8.75rem 4rem 4rem;
   gap: 10px;
 }
-.blue-botton {
+.blue-button {
   border-radius: 100%;
   color: #63e2ff;
   background-color: white;
@@ -69,9 +69,10 @@ body {
   border: none;
   width: 4.225rem;
   height: 4.225rem;
-  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.24));
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.075));
   font-weight: bold;
   font-family: "Inter", sans-serif;
+  cursor: pointer;
 }
 
 .purple-button {
@@ -82,9 +83,10 @@ body {
   border: none;
   width: 4.225rem;
   height: 4.225rem;
-  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.24));
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.075));
   font-family: "Inter", sans-serif;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .two-span {
@@ -95,9 +97,10 @@ body {
   border: none;
   width: 8.8rem;
   height: 4.225rem;
-  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.24));
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.075));
   font-family: "Inter", sans-serif;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .equal-button {
@@ -108,7 +111,8 @@ body {
   border: none;
   width: 4.225rem;
   height: 4.225rem;
-  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.24));
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.075));
   font-family: "Inter", sans-serif;
   font-weight: bold;
+  cursor: pointer;
 }
