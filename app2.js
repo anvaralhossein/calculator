@@ -27,7 +27,7 @@ for (let i = 0; i < numberButtons.length; i++)
   });
 
 allClearButton.addEventListener("click", () => {
-  currentOperandTextElement.textContent = "0";
+  currentOperandTextElement.textContent = "";
   previousOperandTextElement.textContent = " ";
   setPoint = false;
 });
@@ -39,55 +39,49 @@ pointButton.addEventListener("click", () => {
   }
 });
 
+reverseButton.addEventListener("click", () => {
+  currentOperandTextElement.textContent =
+    currentOperandTextElement.textContent * -1;
+});
+
 precent.addEventListener("click", () => {
-  number1 = Number(currentOperandTextElement.textContent);
-  previousOperandTextElement.textContent = number1;
-  currentOperandTextElement.textContent = "0";
-  previousOperandTextElement.textContent += "";
-  console.log(number1);
-  optatar = "%";
+  currentOperandTextElement.textContent =
+    currentOperandTextElement.textContent / 100;
 });
 
 total.addEventListener("click", () => {
   number1 = Number(currentOperandTextElement.textContent);
   previousOperandTextElement.textContent += number1;
-  previousOperandTextElement.textContent += "+";
   currentOperandTextElement.textContent = "0";
+  previousOperandTextElement.textContent += "+";
 
   optatar = "+";
-  if (
-    total.addEventListener("click", () => {
-      number2 = Number(currentOperandTextElement.textContent);
-      previousOperandTextElement.textContent += number2;
-    })
-  )
-    console.log(number1);
 });
 
 minus.addEventListener("click", () => {
   number1 = Number(currentOperandTextElement.textContent);
-  previousOperandTextElement.textContent = number1;
+  previousOperandTextElement.textContent += number1;
   currentOperandTextElement.textContent = "0";
   previousOperandTextElement.textContent += "-";
-  console.log(number1);
+
   optatar = "-";
 });
 
 division.addEventListener("click", () => {
   number1 = Number(currentOperandTextElement.textContent);
-  previousOperandTextElement.textContent = number1;
+  previousOperandTextElement.textContent += number1;
   currentOperandTextElement.textContent = "0";
   previousOperandTextElement.textContent += "÷";
-  console.log(number1);
+
   optatar = "/";
 });
 
 multiplication.addEventListener("click", () => {
   number1 = Number(currentOperandTextElement.textContent);
-  previousOperandTextElement.textContent = number1;
+  previousOperandTextElement.textContent += number1;
   currentOperandTextElement.textContent = "0";
   previousOperandTextElement.textContent += "×";
-  console.log(number1);
+
   optatar = "*";
 });
 
